@@ -18,7 +18,7 @@ SAMPLE_RANGE_NAME = 'Ответы на форму (1)'
 
 def get_value(name):
     res = []
-    today = (datetime.today() - timedelta(days=1)).strftime('%d.%m.%Y')
+    today = (datetime.today()).strftime('%d.%m.%Y')
     credentials = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
